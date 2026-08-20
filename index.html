@@ -7,10 +7,37 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     body { background-color: #f4f6f9; color: #333; line-height: 1.6; }
-    header { background-color: #004b87; color: white; padding: 2rem 1rem; text-align: center; }
-    header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+    
+    /* Header estilizado para incluir a logo na esquerda */
+    header { 
+      background-color: #004b87; 
+      color: white; 
+      padding: 1.5rem 2rem; 
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+    
+    .header-logo {
+      height: 70px; /* Altura ajustável da logo */
+      width: auto;
+      border-radius: 6px; /* Opcional: cantos suaves para a logo */
+    }
+
+    .header-text {
+      flex: 1;
+      text-align: center;
+    }
+
+    header h1 { font-size: 2.2rem; margin-bottom: 0.2rem; }
     header p { font-size: 1.1rem; opacity: 0.9; }
     
+    /* Elemento invisível para manter o título perfeitamente centralizado */
+    .header-spacer {
+      width: 70px; 
+    }
+
     .nav-contact { background: #002e54; padding: 0.8rem; text-align: center; color: white; }
     .nav-contact a { color: #25d366; text-decoration: none; font-weight: bold; margin: 0 10px; }
     
@@ -32,13 +59,29 @@
     .btn-mail { display: inline-block; background-color: #004b87; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 0.5rem; }
     
     footer { background: #222; color: white; text-align: center; padding: 1.5rem; margin-top: 3rem; }
+
+    /* Responsividade para telas menores (celulares) */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .header-spacer {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Bemhes Representação</h1>
-    <p>Soluções de Alto Desempenho em Lubrificantes e Manutenção Industrial NCH</p>
+    <!-- Substitua "logo.png" pelo caminho correto do seu arquivo de imagem -->
+    <img src="logo.png" alt="Logo Bemhes" class="header-logo">
+    <div class="header-text">
+      <h1>Bemhes Representação</h1>
+      <p>Soluções de Alto Desempenho em Lubrificantes e Manutenção Industrial NCH</p>
+    </div>
+    <div class="header-spacer"></div>
   </header>
 
   <div class="nav-contact">
@@ -151,6 +194,17 @@
           <a href="nc-123-plus.html" class="card-btn">Ver Detalhes do Produto / FISPQ</a>
         </div>
       </div>
+
+      <!-- Produto 10 -->
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">CLIENTES</h3>
+          <p class="card-text">Poderoso limpador desengraxante multipropósito não inflamável, seguro e econômico.</p>
+        </div>
+        <div style="padding: 0 1.5rem 1.5rem 1.5rem;">
+          <a href="CLIENTES.html" class="card-btn">Ver Detalhes do Produto</a>
+        </div>
+      </div>
     </div>
 
     <!-- Banner de Cotações Gerais -->
@@ -161,17 +215,6 @@
       <a class="btn-mail" href="mailto:bemhesrepresentacao@gmail.com?subject=Solicitacao%20de%20Cotacao%20/%20Visita">✉️ Enviar um E-mail</a>
     </div>
   </div>
-
-  <!-- Produto 10 -->
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">CLIENTES</h3>
-          <p class="card-text">Poderoso limpador desengraxante multipropósito não inflamável, seguro e econômico.</p>
-        </div>
-        <div style="padding: 0 1.5rem 1.5rem 1.5rem;">
-          <a href="CLIENTES.html" class="card-btn">Ver Detalhes do Produto</a>
-        </div>
-      </div>
 
   <footer>
     <p>&copy; 2026 Bemhes Representação. Todos os direitos reservados.</p>
