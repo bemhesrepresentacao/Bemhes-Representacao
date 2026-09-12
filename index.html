@@ -298,6 +298,17 @@
             color: #fff;
         }
 
+        .tag-video {
+            background: rgba(239, 68, 68, 0.18);
+            color: #F87171;
+            border: 1px solid #EF4444;
+        }
+
+        .tag-video:hover {
+            background: #EF4444;
+            color: #fff;
+        }
+
         /* Modal de Detalhes */
         .modal {
             display: none;
@@ -447,7 +458,6 @@
             <p>Nosso compromisso é transformar lubrificação em resultado: mais proteção para o seu equipamento, maior produtividade e economia para o seu negócio.</p>
             <p><strong>Marcão da Graxa</strong> — Tecnologia em lubrificação, proteção e performance para o seu negócio.</p>
         </div>
-        <div class="video-container">    
     </section>
 
     <section id="atuacao" style="background: #0B1120;">
@@ -540,28 +550,11 @@
                 categoria: "graxa",
                 nome: "Premalube / Premalube Red",
                 imagem: "Premalube.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Premalube / Premalube Red NCH"),
                 descricaoCurta: "Graxa multipropósito de alta performance para cargas pesadas e extrema pressão. Formulação à base de complexo de alumínio.",
                 detalhesHtml: `
                     <h3>Premalube / Premalube Red - Graxa Multipropósito EP</h3>
                     <p>Graxa de complexo de alumínio de alta performance para cargas pesadas, extrema pressão e elevadas temperaturas (Graus NLGI #2, #1, Red #2, #1, #0, #00, #000 e Arctic #000).</p>
-                    <style>
-.video-container {
-    max-width: 900px;
-    margin: 30px auto;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-}
-
-.video-container video {
-    width: 100%;
-    display: block;
-}
-</style>
-<video controls width="100%" poster="shiny-side.png">
-    <source src="Shiny-Side.mp4" type="video/mp4">
-    Seu navegador não suporta vídeos.
-</video>
                     <h4>Aplicações e Restrições:</h4>
                     <ul>
                         <li><strong>Ideal para:</strong> Equipamentos de construção, mineração, agricultura, siderúrgicas e indústria geral (rolamentos, mancais, juntas universais e engrenagens).</li>
@@ -578,14 +571,6 @@
                         <li><strong>Carga Timken OK:</strong> 60 a 65 lbs.</li>
                         <li><strong>Atende especificações:</strong> Caterpillar MPG, Case 251H EP, Ford M1693A, MIL-G-23549C, USDA H2.</li>
                     </ul>
-                    <div class="video-container">
-    <video controls poster="shiny-side.png">
-        <source src="Shiny-Side.mp4" type="video/mp4">
-        Seu navegador não suporta vídeos.
-    </video>
-</div>
-
-
                 `
             },
             {
@@ -593,6 +578,7 @@
                 categoria: "graxa",
                 nome: "Premalube FG",
                 imagem: "premalube-fg.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Premalube FG NCH"),
                 descricaoCurta: "Graxa branca de grau alimentício H1 (NLGI #1 e #2) com espessante de complexo de alumínio para indústrias alimentícias e farmacêuticas.",
                 detalhesHtml: `
                     <h3>Premalube FG - Graxa de Grau Alimentício H1</h3>
@@ -615,6 +601,7 @@
                 categoria: "graxa",
                 nome: "Premalube Xtreme",
                 imagem: "premalube-xtreme.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Premalube Xtreme NCH"),
                 descricaoCurta: "Graxa de alta performance para aplicações severas com tecnologia de sulfonato de cálcio, blend sintético e Nano-Guard™.",
                 detalhesHtml: `
                     <h3>Premalube Xtreme - Graxa de Alta Performance</h3>
@@ -636,6 +623,7 @@
                 categoria: "graxa",
                 nome: "Premalube Xtreme Green",
                 imagem: "premalube-xtreme-green.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Premalube Xtreme Green NCH"),
                 descricaoCurta: "Graxa sulfonato de cálcio verde-azulada para ambientes extremos, alta velocidade (20.000 rpm) e resistência total à água salgada.",
                 detalhesHtml: `
                     <h3>Premalube Xtreme Green - Graxa Verde-Azulada EP</h3>
@@ -657,6 +645,7 @@
                 categoria: "graxa",
                 nome: "Premalube Xtreme Food Grade",
                 imagem: "premalube-xtreme-fg.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Premalube Xtreme Food Grade NCH"),
                 descricaoCurta: "Graxa de grau alimentício H1 de sulfonato de cálcio para condições extremas, suportando cargas de solda de 800kg.",
                 detalhesHtml: `
                     <h3>Premalube Xtreme Food Grade - H1 Severo</h3>
@@ -678,6 +667,7 @@
                 categoria: "aditivo",
                 nome: "Diesel Mate",
                 imagem: "diesel-mate.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Diesel Mate NCH"),
                 descricaoCurta: "O Diesel Mate é um aditivo completo desenvolvido para otimizar o desempenho do diesel, eficiente em S10 e biodiesel.",
                 detalhesHtml: `
                     <h3>Diesel Mate - Aditivo para Diesel</h3>
@@ -702,6 +692,7 @@
                 categoria: "oleo",
                 nome: "Certop (80W90 / 85W140) & Industrial",
                 imagem: "certop.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Certop (80W90 / 85W140) & Industrial NCH"),
                 descricaoCurta: "Óleos de alto desempenho para engrenagens e rolamentos formulados para resistir a condições severas em frotas e indústrias.",
                 detalhesHtml: `
                     <h3>Linha Certop - Óleos para Engrenagens e Rolamentos</h3>
@@ -724,6 +715,7 @@
                 categoria: "oleo",
                 nome: "Spectra Xtreme CI-4",
                 imagem: "spectra-xtreme.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Spectra Xtreme CI-4 NCH"),
                 descricaoCurta: "Óleo lubrificante de alto desempenho para motores diesel (SAE 15W40 / API CI-4) formulado com Molysol.",
                 detalhesHtml: `
                     <h3>Spectra Xtreme CI-4 - Óleo para Motores Diesel</h3>
@@ -746,6 +738,7 @@
                 categoria: "oleo",
                 nome: "HOC Xtreme (ISO 22, 32, 46, 68)",
                 imagem: "hoc-xtreme.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("HOC Xtreme (ISO 22, 32, 46, 68) NCH"),
                 descricaoCurta: "Óleo hidráulico monograu com Molysol para serviços pesados e extensão do intervalo de troca.",
                 detalhesHtml: `
                     <h3>HOC Xtreme - Óleo Hidráulico de Alto Desempenho</h3>
@@ -768,6 +761,7 @@
                 categoria: "oleo",
                 nome: "Oil-All Xtreme (SAE 10W30)",
                 imagem: "oil-all-xtreme.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Oil-All Xtreme (SAE 10W30) NCH"),
                 descricaoCurta: "Fluido universal multifuncional com blend sintético para equipamentos agrícolas e de construção pesada.",
                 detalhesHtml: `
                     <h3>Oil-All Xtreme - Fluido Universal (SAE 10W30)</h3>
@@ -789,6 +783,7 @@
                 categoria: "protetivo",
                 nome: "Resist-X",
                 imagem: "resist-x.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Resist-X NCH"),
                 descricaoCurta: "Protetivo anticorrosivo líquido que desloca umidade, lubrifica e forma uma película flexível contínua.",
                 detalhesHtml: `
                     <h3>Resist-X - Protetivo Anticorrosivo</h3>
@@ -810,6 +805,7 @@
                 categoria: "limpeza",
                 nome: "Enforce",
                 imagem: "enforce.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Enforce NCH"),
                 descricaoCurta: "Limpador e desincrustante alcalino concentrado, biodegradável e não inflamável para remoção pesada.",
                 detalhesHtml: `
                     <h3>Enforce - Desengraxante Alcalino Concentrado</h3>
@@ -831,6 +827,7 @@
                 categoria: "limpeza",
                 nome: "Grrr",
                 imagem: "grrr.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Grrr NCH"),
                 descricaoCurta: "Limpador desengraxante multipropósito espumante e penetrante, seguro para áreas alimentícias (NSF A1).",
                 detalhesHtml: `
                     <h3>Grrr - Limpador Desengraxante Multipropósito</h3>
@@ -852,6 +849,7 @@
                 categoria: "limpeza",
                 nome: "Shiny-Side",
                 imagem: "shiny-side.png",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Shiny-Side NCH"),
                 descricaoCurta: "Limpador e abrilhantador alcalino para remoção de óxidos em serpentinas de ar condicionado e alumínio.",
                 detalhesHtml: `
                     <h3>Shiny-Side - Limpador de Serpentinas e Alumínio</h3>
@@ -873,6 +871,7 @@
                 categoria: "aerossol",
                 nome: "Electra Coat",
                 imagem: "electra-coat.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Electra Coat NCH"),
                 descricaoCurta: "Revestimento emborrachado transparente, excelente para proteger conectores e terminais elétricos expostos da corrosão.",
                 detalhesHtml: `
                     <h3>Electra Coat - Revestimento emborrachado transparente</h3>
@@ -894,6 +893,7 @@
                 categoria: "aerossol",
                 nome: "Dri-Lube Plus",
                 imagem: "Dri-Lube Plus.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Dri-Lube Plus NCH"),
                 descricaoCurta: "Lubrificante seco multipropósito de bissulfeto de molibdênio.",
                 detalhesHtml: `
                     <h3>Dri-Lube Plus - Lubrificante seco multipropósito de bissulfeto de molibdênio</h3>
@@ -915,6 +915,7 @@
                 categoria: "aerossol",
                 nome: "Lube-Trac",
                 imagem: "Lube-Trac.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Lube-Trac NCH"),
                 descricaoCurta: "Lubrificante com Moly para engrenagens abertas.",
                 detalhesHtml: `
                     <h3>Lube-Trac - Lubrificante com Moly para engrenagens abertas</h3>
@@ -946,6 +947,7 @@
                 categoria: "aditivo",
                 nome: "DZL Clean",
                 imagem: "DZL Clean.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("DZL Clean NCH"),
                 descricaoCurta: "O DZL Clean é um Condicionador de combustível diesel de aplicação única",
                 detalhesHtml: `
                     <h3>DZL Clean - Condicionador de combustivel</h3>
@@ -980,6 +982,7 @@
                 categoria: "aditivo",
                 nome: "Tank Tonic",
                 imagem: "Tank Tonic.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Tank Tonic NCH"),
                 descricaoCurta: "Biocida e conservante para combustível.",
                 detalhesHtml: `
                     <h3>Tank Tonic - Biocida e conservante para Diesel</h3>
@@ -1009,6 +1012,7 @@
                 categoria: "aditivo",
                 nome: "Fire-UP!",
                 imagem: "Fire-UP.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("Fire-UP! NCH"),
                 descricaoCurta: "O Fire-UP! é um Condicionador de combustível diesel para climas de temperaturas extremamente baixas.",
                 detalhesHtml: `
                     <h3>Fire-UP! - Condicionador de combustível para Diesel</h3>
@@ -1037,6 +1041,7 @@
                 categoria: "tratamento-de-superficies",
                 nome: "CONQUEST",
                 imagem: "Conquest.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("CONQUEST NCH"),
                 descricaoCurta: "Polímero convertedor de ferrugem, inibidor de corrosão e primer preparador para superfícies metálicas.",
                 detalhesHtml: `
                     <h3>CONQUEST - Polímero Convertedor de Ferrugem e Inibidor de Corrosão</h3>
@@ -1074,6 +1079,7 @@
     categoria: "lubrificantes-e-manutencao",
     nome: "SYSTEM PURGE",
     imagem: "System Purge.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("SYSTEM PURGE NCH"),
     descricaoCurta: "Óleo tipo flushing de alta tecnologia para limpeza e remoção de contaminantes com o equipamento em funcionamento.",
     detalhesHtml: `
         <h3>SYSTEM PURGE - Óleo Tipo Flushing de Alta Tecnologia</h3>
@@ -1106,6 +1112,7 @@
         categoria: "graxa-de-montagem",
         nome: "LOK-CEASE 20/20",
         imagem: "Lok-Cease 20-20.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("LOK-CEASE 20/20 NCH"),
         descricaoCurta: "Pasta antiengripante de grau alimentício para aplicações industriais e de processamento de alimentos.",
         detalhesHtml: `
             <h3>LOK-CEASE 20/20 - Pasta Antiengripante de Grau Alimentício</h3>
@@ -1137,6 +1144,7 @@
         categoria: "aerossol",
         nome: "DYLEK PS II",
         imagem: "Dylek PS II.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("DYLEK PS II NCH"),
         descricaoCurta: "Limpador e desengraxante em aerossol para equipamentos eletrônicos industriais.",
         detalhesHtml: `
             <h3>DYLEK PS II - Limpador e Desengraxante para Equipamentos Eletrônicos</h3>
@@ -1167,6 +1175,7 @@
     categoria: "aerossol",
     nome: "VOLTZ",
     imagem: "Voltz.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("VOLTZ NCH"),
     descricaoCurta: "Solvente desengraxante cítrico de alta rigidez dielétrica para limpeza de equipamentos mecânicos e elétricos.",
     detalhesHtml: `
         <h3>VOLTZ - Solvente Desengraxante Cítrico de Alta Rigidez Dielétrica</h3>
@@ -1195,6 +1204,7 @@
     categoria: "aerossol",
     nome: "NC-123 PLUS",
     imagem: "NC-123-Plus.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("NC-123 PLUS NCH"),
     descricaoCurta: "Repelente de umidade para equipamentos elétricos que previne a oxidação e reduz paradas.",
     detalhesHtml: `
         <h3>NC-123 PLUS - Repelente de Umidade para Equipamentos Elétricos</h3>
@@ -1221,6 +1231,7 @@
     categoria: "aerossol",
     nome: "FREE",
     imagem: "Free.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("FREE NCH"),
     descricaoCurta: "Agente desengripante e lubrificante de uso geral para desengripar, proteger contra a ferrugem e lubrificar.",
     detalhesHtml: `
         <h3>FREE - Agente Desengripante e Lubrificante de Uso Geral</h3>
@@ -1245,6 +1256,7 @@
     categoria: "aerossol",
     nome: "AR-19",
     imagem: "Ar-19.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("AR-19 NCH"),
     descricaoCurta: "Emulsão protetiva abrilhantadora de superfícies para proteger, repelir umidade e sujeiras e promover brilho.",
     detalhesHtml: `
         <h3>AR-19 - Emulsão Protetiva Abrilhantadora de Superfícies</h3>
@@ -1271,6 +1283,7 @@
     categoria: "tratamento-de-superficies",
     nome: "ETCH-KLENZ",
     imagem: "etch-klenz.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("ETCH-KLENZ NCH"),
     descricaoCurta: "Desengraxante e condicionador de metais projetado para remover corrosão, ferrugem e oxidação, preparando a superfície para pinturas e revestimentos.",
     detalhesHtml: `
         <h3>ETCH-KLENZ - Desengraxante e Condicionador de Metais</h3>
@@ -1297,6 +1310,7 @@
     categoria: "tratamento-de-superficies",
     nome: "CERTIFIED 909",
     imagem: "certified-909.jpg",
+                video: "https://www.youtube.com/results?search_query=" + encodeURIComponent("CERTIFIED 909 NCH"),
     descricaoCurta: "Composto para reparo e restauração de superfícies que oferece alta durabilidade, resistência superior e proteção contra abrasão e produtos químicos[cite: 1].",
     detalhesHtml: `
         <h3>CERTIFIED 909 - Composto para Reparo e Restauração de Superfícies</h3>
@@ -1343,7 +1357,7 @@
                         <div class="btn-group">
                             <a href="https://wa.me/554388428240?text=${encodedMsg}" target="_blank" class="tag-btn tag-cotacao">Cotação</a>
                             <button onclick="openModal('${prod.id}')" class="tag-btn tag-detalhes">Detalhes</button>
-                            <button onclick="openModal('${prod.id}')" class="tag-btn tag-detalhes">Detalhes</button>
+                            <button onclick="openVideo('${prod.id}')" class="tag-btn tag-video">▶ Vídeo</button>
                         </div>
                     </div>
                 `;
@@ -1358,6 +1372,14 @@
             event.target.classList.add('active');
 
             renderProducts(category);
+        }
+
+        // Abrir vídeo correspondente ao produto
+        function openVideo(productId) {
+            const prod = produtos.find(p => p.id === productId);
+            if (prod && prod.video) {
+                window.open(prod.video, '_blank', 'noopener,noreferrer');
+            }
         }
 
         // Modal de detalhes
