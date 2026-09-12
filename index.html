@@ -574,7 +574,44 @@
         // Para INCLUIR ou MODIFICAR um produto, altere apenas este array:
         // Categoria aceitas: 'graxa', 'oleo', 'aditivo', 'limpeza', 'aerossol', 'protetivo', 'tratamento-de-superficies', 'graxa de montagem'
         // =========================================================================
-        const produtos = [{
+        const produtos = [
+            {
+    id: "premalube",
+    categoria: "graxa",
+    nome: "Premalube / Premalube Red",
+    // Substituído 'imagem' por 'video' (ajuste o nome do arquivo conforme necessário)
+    video: "premalube.mp4", 
+    descricaoCurta: "Graxa multipropósito de alta performance para cargas pesadas e extrema pressão. Formulação à base de complexo de alumínio.",
+    detalhesHtml: `
+        <!-- Exemplo de como você pode renderizar o vídeo utilizando a tag HTML -->
+        <div class="video-container">
+            <video autoplay muted loop playsinline width="100%">
+                <source src="premalube.mp4" type="video/mp4">
+                Seu navegador não suporta tags de vídeo.
+            </video>
+        </div>
+
+        <h3>Premalube / Premalube Red - Graxa Multipropósito EP</h3>
+        <p>Graxa de complexo de alumínio de alta performance para cargas pesadas, extrema pressão e elevadas temperaturas (Graus NLGI #2, #1, Red #2, #1, #0, #00, #000 e Arctic #000).</p>
+        <h4>Aplicações e Restrições:</h4>
+        <ul>
+            <li><strong>Ideal para:</strong> Equipamentos de construção, mineração, agricultura, siderúrgicas e indústria geral (rolamentos, mancais, juntas universais e engrenagens).</li>
+            <li><strong>Contraindicações:</strong> Não utilizar em rolamentos acima de 4.500 RPM ou em temperaturas contínuas superiores às especificações técnicas.</li>
+        </ul>
+        <h4>Principais Aditivos e Benefícios:</h4>
+        <ul>
+            <li><strong>Complexo de Alumínio:</strong> Excelente reversão ao calor e altíssima resistência à lavagem por água.</li>
+            <li><strong>Bissulfeto de Molibdênio e Grafite:</strong> Proteção antidesgaste superior contra choques mecanicos e ambientes abrasivos.</li>
+            <li><strong>Polímeros Adesivos:</strong> Fixam a graxa no ponto de aplicação evitando escorrimentos.</li>
+        </ul>
+        <h4>Especificações Técnicas:</h4>
+        <ul>
+            <li><strong>Carga Timken OK:</strong> 60 a 65 lbs.</li>
+            <li><strong>Atende especificações:</strong> Caterpillar MPG, Case 251H EP, Ford M1693A, MIL-G-23549C, USDA H2.</li>
+        </ul>
+    `
+}
+            {
                 id: "premalube",
                 categoria: "graxa",
                 nome: "Premalube / Premalube Red",
